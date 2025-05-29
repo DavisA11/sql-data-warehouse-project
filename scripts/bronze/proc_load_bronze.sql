@@ -4,7 +4,7 @@ Stored Procedure: Load Bronze Layer (Source -> Bronze)
 =========================================================================
 Script Purpose:
     This stored procedure loads data into the 'bronze' schema from external CSV files.
-    It perfoms the following actions:
+    It performs the following actions:
     - Truncates the bronze tables before loading data.
     - Uses the 'BULK INSERT' command to load data from csv files to bronze tables.
 
@@ -104,8 +104,8 @@ BEGIN
 		PRINT '---------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.erp_cust_az12';
-		TRUNCATE TABLE bronze.erp_cust_az12;
+		PRINT '>> Truncating Table: bronze.erp_loc_a101';
+		TRUNCATE TABLE bronze.erp_loc_a101;
 
 		PRINT '>> Inserting Data Into: bronze.erp_loc_a101';
 		BULK INSERT bronze.erp_loc_a101
@@ -143,7 +143,7 @@ BEGIN
 	END TRY
 	BEGIN CATCH
 		PRINT '=============================================';
-		PRINT 'ERROR OCCURED DURING LOADING BRONZE LAYER';
+		PRINT 'ERROR OCCURRED DURING LOADING BRONZE LAYER';
 		PRINT 'Error Message' + ERROR_MESSAGE();
 		PRINT 'Error Message' + CAST (ERROR_NUMBER() AS NVARCHAR);
 		PRINT 'Error Message' + CAST (ERROR_STATE() AS NVARCHAR);
