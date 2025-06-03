@@ -4,6 +4,22 @@ Welcome to the **Data Warehouse and Analytics Project** repository.
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project that highlights the best industry practices in data engineering and analytics.
 
 ---
+## Data Architecture
+
+The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+![Data Architecture](docs/data_architecture.png)
+
+1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV files into a SQL Server Database.
+2. **Silver Layer**: This layer includes data cleaning, standardization, and normalization to prepare data for analysis.
+3. **Gold Layer**: Stores business-ready data, modeled into a star schema, required for reporting and analytics.
+
+## Project Overview
+
+This project involves:
+
+1. **Data Architecture**: Designing a modern data warehouse using Medallion architecture **Bronze**, **Silver**, and **Gold** layers.
+2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
+3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
 
 ## Project Requirements
 Since this isn't a real-world project and exists solely for practice, I have included project requirements that would realistically arise in a real-world project.
@@ -22,14 +38,8 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 ---
 
-### BI: Analytics & Reporting (Data Analytics)
+## Stay Connected with me!
 
-### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
+Feel free to connect with me on LinkedIn:
 
-These insights will empower stakeholders by revealing KPIs and gathering metrics on these KPIs to enable further strategic decision-making.
-
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/davis-addink-6a7651224/)
