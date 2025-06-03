@@ -43,3 +43,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 Feel free to connect with me on LinkedIn:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/davis-addink-6a7651224/)
+
+---
+
+Note: Project structure was inspired by Data with Baraa, with modifications, troubleshooting, and additional elements implemented independently.
